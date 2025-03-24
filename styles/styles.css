@@ -1,0 +1,100 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F9F1E9;
+  color: #333;
+  line-height: 1.6;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+#hero h1 {
+  font-size: 4.5rem;
+  color: #FF6F61;
+  margin-bottom: 10px;
+}
+#hero .title {
+  font-size: 1.8rem;
+  color: #F4A261;
+  font-weight: 700;
+}
+#hero .bio {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+#projects {
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.project-card {
+  width: 45%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.02);
+}
+.project-card h2 {
+  font-size: 2rem;
+  color: #FF6F61;
+  margin-bottom: 10px;
+}
+.project-card.expanded {
+  width: 90%;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.extra-content {
+  display: none;
+  height: 0;
+  opacity: 0;
+  color: #6BC4B5;
+}
+.project-card.expanded .extra-content {
+  display: block;
+}
+.extra-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #019179;
+}
+.extra-content li {
+  margin-bottom: 8px;
+}
+
+footer {
+  background: #B8A9D1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  color: #F9F1E9;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.project-card img {
+    width: 50%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: block;
+  }
