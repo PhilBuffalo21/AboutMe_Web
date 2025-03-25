@@ -75,6 +75,13 @@ body {
 }
 .extra-content li {
   margin-bottom: 8px;
+  font-size: medium;
+  font-weight: bold;
+  color: #FF6F61;
+}
+.extra-content p {
+  color: black;
+  font-size: larger;
 }
 
 footer {
